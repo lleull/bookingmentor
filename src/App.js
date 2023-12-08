@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react'
+import './App.css'
+import Chat from './Component/UICHAT/Chat'
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <div className='chat'></div>
+ <Chat/>
+ <div className='solution'>
+  <h1>Simple Booking</h1>
+  <p style={{width: "50%", color:'white'}}>Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangmetsn andmake bookings. Once the walk has been completed you can rate your walker and book again all through the chat</p>
+
+ </div>
+ 
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
